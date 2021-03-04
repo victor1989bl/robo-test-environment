@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS payment;
+CREATE USER IF NOT EXISTS 'payment'@'%' IDENTIFIED BY 'secret';
+GRANT ALL ON `payment`.* TO 'payment'@'%';
+FLUSH PRIVILEGES;
